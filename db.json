@@ -19,39 +19,8 @@
         "id": "1",
         "nome": "Infra"
       },
-      "costs": 11000,
-      "services": [
-        {
-          "name": "teste",
-          "costs": "1000",
-          "description": "fazer umas parada aí",
-          "id": "492f65c6-1d20-4199-8677-4868aba06a3e"
-        },
-        {
-          "name": "teste",
-          "costs": "1500",
-          "description": "teste 3",
-          "id": "ede56b65-99ce-4bd1-8119-0b16fa061923"
-        },
-        {
-          "name": "teste",
-          "costs": "1500",
-          "description": "teste 3",
-          "id": "ede56b65-99ce-4bd1-8119-0b16fa061923"
-        },
-        {
-          "name": "Contratar o jorge maicon",
-          "description": "pegar e Contratar o jorge maicon",
-          "costs": "3000",
-          "id": "f8900ae6-905d-4852-b8f7-8d5333ce3c09"
-        },
-        {
-          "name": "Contratar o jorge maicon",
-          "description": "pegar e Contratar o jorge maicon",
-          "costs": "3000",
-          "id": "7a2dd23e-53d0-493d-9877-74c71a599e9d"
-        }
-      ]
+      "costs": 0,
+      "services": []
     },
     {
       "id": "97af",
@@ -61,15 +30,8 @@
         "id": "1",
         "nome": "Infra"
       },
-      "costs": 200,
-      "services": [
-        {
-          "name": "Comprar panela",
-          "costs": "200",
-          "description": "Comprar a paela pra ferver as parada",
-          "id": "ec241b95-4456-4472-bb0c-42949e94c42e"
-        }
-      ]
+      "costs": 0,
+      "services": []
     }
   ],
   "categories": [

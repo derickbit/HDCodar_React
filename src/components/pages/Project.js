@@ -61,7 +61,30 @@ function Project() {
       .catch((err) => console.log(err));
   }
 
-  function removeService() {}
+  function removeService(id, costs) {
+    setMessage("");
+    const servicesUpdated = project.services.filter(
+      (service) => service.id !== id
+    );
+    const projectUpdated = project;
+    projectUpdated.services = servicesUpdated;
+    projectUpdated.costs = parseFloat(projectUpdated.costs) - parseFloat(costs);
+    fetch(`http://localhost:5000/projects/${projectUpdated.id}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(projectUpdated),
+    })
+      .then((resp) => resp.json())
+      .then((data) => {
+        setProject(projectUpdated);
+        setServices(servicesUpdated);
+        setMessage("Serviço removido com sucesso!");
+        setType("success");
+      })
+      .catch((err) => console.log(err));
+  }
 
   function toggleProjectForm() {
     setshowProjectForm(!showProjectForm);
@@ -76,17 +99,17 @@ function Project() {
     //last service
     const lastService = project.services[project.services.length - 1];
     lastService.id = uuidv4();
-    const lastServiceCost = lastService.costs;
-    const newCost = parseFloat(project.costs) + parseFloat(lastServiceCost);
+    const lastServicecosts = lastService.costs;
+    const newcosts = parseFloat(project.costs) + parseFloat(lastServicecosts);
     //maximun value validation
-    if (newCost > parseFloat(project.budget)) {
+    if (newcosts > parseFloat(project.budget)) {
       setMessage("Orçamento ultrapassado, verifique o valor do serviço");
       setType("error");
       project.services.pop();
       return false;
     }
-    //add service costs to project total cost
-    project.costs = newCost;
+    //add service costs to project total costs
+    project.costs = newcosts;
     //update project
     fetch(`http://localhost:5000/projects/${project.id}`, {
       method: "PATCH",
@@ -157,7 +180,7 @@ function Project() {
                   <ServiceCard
                     id={service.id}
                     name={service.name}
-                    cost={service.costs}
+                    costs={service.costs}
                     description={service.description}
                     key={service.id}
                     handleRemove={removeService}
