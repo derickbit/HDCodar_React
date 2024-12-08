@@ -10,6 +10,39 @@
       "budget": "3000",
       "costs": 0,
       "services": []
+    },
+    {
+      "id": "9ff9",
+      "name": "teste2",
+      "budget": "1000",
+      "category": {
+        "id": "1",
+        "nome": "Infra"
+      },
+      "costs": 0,
+      "services": []
+    },
+    {
+      "id": "2189",
+      "name": "teste3",
+      "budget": "2500",
+      "category": {
+        "id": "1",
+        "nome": "Infra"
+      },
+      "costs": 0,
+      "services": []
+    },
+    {
+      "id": "c14a",
+      "name": "teste4",
+      "budget": "1000",
+      "category": {
+        "id": "4",
+        "nome": "Planejamento"
+      },
+      "costs": 0,
+      "services": []
     }
   ],
   "categories": [
