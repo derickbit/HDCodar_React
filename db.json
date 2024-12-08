@@ -1,0 +1,37 @@
+{
+  "projects": [
+    {
+      "id": "8e86",
+      "category": {
+        "id": "2",
+        "nome": "Desenvolvimento"
+      },
+      "name": "teste",
+      "budget": "3000",
+      "costs": 0,
+      "services": []
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Infra"
+    },
+    {
+      "id": "2",
+      "name": "Desenvolvimento"
+    },
+    {
+      "id": "3",
+      "name": "Design"
+    },
+    {
+      "id": "4",
+      "name": "Planejamento"
+    },
+    {
+      "id": "5",
+      "name": "Implementação de novo framework"
+    }
+  ]
+}
