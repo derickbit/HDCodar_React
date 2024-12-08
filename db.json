@@ -1,45 +1,23 @@
 {
   "projects": [
     {
-      "id": "8e86",
+      "id": "fd11",
+      "name": "Contratar designer ",
+      "budget": "5000",
       "category": {
-        "id": "2",
-        "nome": "Desenvolvimento"
+        "id": "3",
+        "nome": "Design"
       },
-      "name": "teste",
-      "budget": "3000",
       "costs": 0,
       "services": []
     },
     {
-      "id": "9ff9",
-      "name": "teste2",
-      "budget": "1000",
+      "id": "0c2d",
+      "name": "Criar time de testes",
+      "budget": "10000",
       "category": {
         "id": "1",
         "nome": "Infra"
-      },
-      "costs": 0,
-      "services": []
-    },
-    {
-      "id": "2189",
-      "name": "teste3",
-      "budget": "2500",
-      "category": {
-        "id": "1",
-        "nome": "Infra"
-      },
-      "costs": 0,
-      "services": []
-    },
-    {
-      "id": "c14a",
-      "name": "teste4",
-      "budget": "1000",
-      "category": {
-        "id": "4",
-        "nome": "Planejamento"
       },
       "costs": 0,
       "services": []
